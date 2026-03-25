@@ -13,7 +13,6 @@ const VELOCITY_THRESHOLD = 500;
 export function SwipeCard({ word, onSwipeUp, onSwipeDown, isLast = false }: SwipeCardProps) {
   const y = useMotionValue(0);
   const rotate = useTransform(y, [-200, 0, 200], [-8, 0, 8]);
-  const bgOpacity = useTransform(y, [-200, -50, 0, 50, 200], [0.3, 0.1, 0, 0.1, 0.3]);
   const greenOpacity = useTransform(y, [-200, -50, 0], [1, 0.3, 0]);
   const redOpacity = useTransform(y, [0, 50, 200], [0, 0.3, 1]);
 
