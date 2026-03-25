@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0f172a;
+  --color-bg-card: #1e293b;
+  --color-cyan: #06b6d4;
+  --color-pink: #ec4899;
+  --color-cyan-dim: #06b6d480;
+  --color-pink-dim: #ec489980;
+}
+
+/* Glow utility classes */
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.4), 0 0 60px rgba(6, 182, 212, 0.1);
+}
+
+.glow-pink {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.4), 0 0 60px rgba(236, 72, 153, 0.1);
+}
+
+.glow-cyan-strong {
+  box-shadow: 0 0 30px rgba(6, 182, 212, 0.6), 0 0 80px rgba(6, 182, 212, 0.2);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.6), 0 0 30px rgba(6, 182, 212, 0.3);
+}
+
+.text-glow-pink {
+  text-shadow: 0 0 10px rgba(236, 72, 153, 0.6), 0 0 30px rgba(236, 72, 153, 0.3);
+}
+
+/* Prevent pull-to-refresh and overscroll */
+html, body {
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Smooth font rendering */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
